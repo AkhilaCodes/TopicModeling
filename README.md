@@ -21,11 +21,17 @@ Libraries used:
 Process Steps:
 
 a) Data Loading: Reads H2020 reports using pandas.
+
 b) Text Preprocessing: Utilizes spaCy for tokenization, lemmatization, and removal of irrelevant parts of speech.
+
 c) Dictionary and Corpus Creation: Applies Gensim to create a dictionary and generate a bag-of-words representation of the corpus.
+
 d) LDA Model Building: Constructs an LDA model using Gensim’s LdaMulticore, testing various topic numbers for optimal results.
+
 e) Coherence Score Evaluation: Plots coherence scores to determine the optimal number of topics.
+
 f) Optimal Model Training: Constructs the final LDA model with the identified optimal number of topics.
+
 g) Visualization: Uses pyLDAvis to create an interactive visualization of the LDA model.
  
 
